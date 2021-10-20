@@ -7,3 +7,17 @@ Select the user license you want to associate with the users you create (the lic
 Select a profile.
 Select Generate passwords and notify user via email to email a login name and temporary password to each new user.
 Click Save.
+
+
+some basic terms used in the above steps:-
+Here are some guidelines to help you get started
+
+Username: Each user must have a username that is unique across all Salesforce organizations (not just yours).
+
+Username Format: Users must have a username in the format of an email address (that is, jdoe@domain.com), but they don't have to use a real email address. (They can use their email address if they wish as long as their email address is unique across all Salesforce orgs.)
+
+Email: Users can have the same email address across organizations.
+
+Passwords: Users must change their password the first time they log in.
+
+Login Link: Users can only use the login link in the sign–up email once. If a user follows the link and does not set a password, you (the admin) have to reset their password before they can log in.
