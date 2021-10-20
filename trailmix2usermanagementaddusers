@@ -1,0 +1,9 @@
+To add users follow these steps
+
+From Setup, enter Users in the Quick Find box, then select Users.
+Click New User to add a single user or click Add Multiple Users to add up to 10 users at a time.
+Enter each user's name, email address, and a unique username in the form of an email address. By default, the username is the same as the email address, but you can overwrite this.
+Select the user license you want to associate with the users you create (the license determines which profiles are available for each user).
+Select a profile.
+Select Generate passwords and notify user via email to email a login name and temporary password to each new user.
+Click Save.
