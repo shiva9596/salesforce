@@ -1,0 +1,20 @@
+Private :- Only the record owner, and users above that role in the hierarchy, can view, edit, and report on those records.
+
+Public Read Only:- All users can view and report on records, but only the owner, and users above that role in the hierarchy, can edit them.
+
+Public Read/Write:- All users can view, edit, and report on all records.
+
+Controlled by Parent :- A user can view, edit, or delete a record if she can perform that same action on the record it belongs to.
+
+When the org-wide sharing setting for an object is Private or Public Read Only, an admin can grant users additional access to records by setting up a role hierarchy or defining sharing rules. Sharing rules can only be used to grant additional access. They cannot be used to restrict access to records beyond what was originally specified with the org-wide sharing defaults.
+
+As an example, let’s go through and answer the above list of questions for the Position object in the Recruiting app.
+
+Who is the most restricted user of this object?
+A member of the Standard Employee profile. All that they're allowed to do is view a position.
+
+Is there ever going to be an instance of this object that this user shouldn't be allowed to see?
+No. Although the values for the minimum and maximum pay fields are hidden from standard employees, they're still allowed to view all position records.
+
+Is there ever going to be an instance of this object that this user shouldn't be allowed to edit?
+Yes. Standard employees aren’t allowed to edit any position record.
