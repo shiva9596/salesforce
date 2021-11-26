@@ -18,3 +18,4 @@ No. Although the values for the minimum and maximum pay fields are hidden from s
 
 Is there ever going to be an instance of this object that this user shouldn't be allowed to edit?
 Yes. Standard employees aren’t allowed to edit any position record.
+ 
