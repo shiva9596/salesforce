@@ -1,0 +1,7 @@
+
+The CEO, Cynthia, can view and update every record that anyone else in the organization can view and update.
+The VP of Development, Andrew, can view and update any record that his managers or his managers' employees can view or update.
+The VP of Human Resources, Megan, can view and update any record that Phil, her recruiting manager, or Mario, Phil's recruiter, can view and update.
+The Recruiting Manager, Phil, can view and update any record that is owned by Mario, his recruiter.
+The Software Development manager, Ben, can view and update any record that is owned by Melissa, Tom, or Craig, his software engineers.
+The director of QA, Clark, can view and update any record that is owned by Flash or Harry, his QA engineers.
