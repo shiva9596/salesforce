@@ -1,0 +1,28 @@
+Define a Role Hierarchy
+
+From Setup, use the Quick Find box to find Roles. 
+
+
+Just under the company name, click Add Role. If the CEO role already exists, click Edit.
+
+In the Label text box, enter CEO. The Role Name text box autopopulates with CEO.
+
+In the "This role reports" to text box, click the lookup icon Lookup icon and click Select next to the name of your org.
+
+By choosing the name of the org in the This role reports to text box, we’re indicating that the CEO role is a top-level position in our role hierarchy and doesn't report to anyone.
+
+In the Role Name as displayed on reports text box, enter CEO. This text is used in reports to indicate the name of a role. 
+
+Since a long role name, like Vice President of Product Development, takes extra space in your report columns, we recommend using a short but readable abbreviation.
+
+Leave any other options, such as Opportunity Access, set to their defaults, and save. These access options don't have anything to do with our Recruiting app, 
+
+and only appear if you have the org-wide defaults for a standard object set to a level more restrictive than Public Read/Write.
+
+Now that you’ve created your first role, you can assign the appropriate user to it. Click CEO, and on the CEO role detail page, click Assign Users to Role.
+
+
+In the Available Users drop-down list, select All Unassigned.
+
+Choose a user from the list, and click Add to move her to the Selected Users for CEO list, then save.
+
