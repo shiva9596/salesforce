@@ -1,0 +1,25 @@
+Which tools are included with the Salesforce Flow product?
+A.Lightning Experience and Flow Builder
+B.Lightning App Builder and Process Builder
+C.Flow Builder and Process Builder
+D.Flow Builder, Process Builder, and Approvals
+
+answer :- C.Flow Builder and Process Builder
+
+2.) Which declarative tool would you use for the following use case? Guide customers through the process of troubleshooting issues with your product.
+A.Flow Builder
+B.Approvals
+C.Apex
+answer :- A.Flow Builder
+
+3.) Which declarative tool would you use for the following use case? When an opportunity's discount is higher than 40%, notify the CEO via email and request sign-off. Provide a way for the CEO to leave comments.
+A.Flow Builder
+B.Approvals
+C.Apex
+answer:- B. approvals
+
+4.) Which declarative tool would you use for the following use case? When the Annual Revenue field exceeds $500,000 on an account, automatically update the Customer Priority field to High.
+A.Flow Builder
+B.Approvals
+C.Apex
+answer:- a.) Flow Builder
