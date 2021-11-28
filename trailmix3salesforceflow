@@ -1,0 +1,36 @@
+Meet Salesforce Flow
+Salesforce Flow provides declarative process automation for every Salesforce app, experience, and portal.
+
+Included in Salesforce Flow are two point-and-click automation tools: 
+1.) Flow Builder, which lets you build flows,
+2.) Process Builder, which lets you edit existing processes.
+3.) Salesforce Flow is the name of the product.
+
+
+Flow Builder
+Use Flow Builder to:
+
+Automate a guided visual experience.
+Start a behind-the-scenes business process:
+When a user clicks something, like a button
+When a record is created
+When a record is updated
+When a record is deleted
+When a platform event occurs
+At a specified time and frequency
+For example, when an opportunity is won, your company wants a renewal opportunity to be created automatically. 
+
+Process Builder
+For all behind-the-scenes automation needs, we recommend that you use Flow Builder. Use Process Builder only if you’re already familiar with using it and you need to edit an existing process. To create a new automated process, use Flow Builder instead.
+
+Process Builder contains some of the same functionality that Flow Builder does. Processes can start when:
+
+A record is created
+A record is updated
+A platform event occurs
+Apex
+Use Apex when you need more functionality than is available in Flow Builder. Build the more complex functionality as invocable Apex methods. Then call the resulting Apex as an Apex action in the process or as an Apex action element in the flow.
+
+Now, let’s see these principles in practice with a few sample scenarios.
+
+Sample Scenarios
