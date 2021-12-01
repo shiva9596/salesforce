@@ -1,0 +1,26 @@
+Add a Trigger
+Click Add Object.
+For Object, enter Opp to filter the list of options and select Opportunity.
+Select when a record is created or edited. Choose Object and Specify When to Start the Process panel
+Click Save.
+
+Add Criteria
+Now let’s define the criteria. We check whether the opportunity is closed won and if it’s high-value. In this case, high-value means more than $250,000.
+Click Add Criteria.
+Name the criteria Closed Won and High-Value.
+Leave Conditions are met selected.
+Check whether the opportunity has been closed and won.
+For Field (1), choose Opportunity | Stage, and click Choose.
+For Operator (2), leave Equals selected.
+For Type (3), leave Picklist selected.
+For Value (4), select Closed Won.
+With another condition, check whether the opportunity is high value.
+Click Add Row.
+For Field (1), choose Opportunity | Amount, and click Choose.
+For Operator (2), select Greater than.
+For Type (3), leave Currency selected.
+For Value (4), enter 250,000.
+Be sure All of the conditions are met is selected.
+Define Criteria for this Action Group panel
+Click Advanced and select Yes. When you select this option, the process ignores record changes that aren’t relevant to your defined criteria. For example, if the opportunity’s description is updated, the process won’t execute the associated actions.
+Click Save.
