@@ -1,0 +1,10 @@
+Add a Screen to Collect User Input
+From the toolbox, drag a Screen element onto the canvas.
+Name it New Account in the Label field.
+In Components, click Text twice.
+Select the first Text screen component and enter Account Name in the Label field. Select the Require checkbox.
+Select the second Text screen component and enter Phone Number in the Label field.
+Select the footer under the Text screen components. On the right expand Configure Footer. Under Previous Button, select Hide Previous. Under Pause Button, select Hide Pause
+click done 
+
+finish
