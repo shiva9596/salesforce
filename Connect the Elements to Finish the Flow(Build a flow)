@@ -1,0 +1,34 @@
+
+Connecting the flow elements tells the flow what order to follow at run time.
+Click the node at the bottom of Start and drag it to New Account.
+Click the node at the bottom of New Account and drag it to Create Account.
+Click the node at the bottom of Create Account and drag it to Upload Files. Connecting New Account to Create Account and Create Account to Upload Files
+Save the flow and in Flow Label, name it Quick Account.
+Click Save.
+Distribute Your Flow
+Now it's time to distribute our flow to the right users. To do so, we add it to the Home page.
+To learn about more ways to distribute a flow, check out the Screen Flow Distribution module.
+Activate Your Flow
+Only active flows are available in the Lightning App Builder, so first activate the flow.
+If you’re still viewing the Quick Account flow in Flow Builder, click Activate. If not, from Setup, enter Flows in the Quick Find box, then select Flows.
+Click Quick Account.
+From the button bar in Flow Builder, click Activate.
+Add Your Flow to the Home Page
+Create a home page.
+From Setup, enter Builder in the Quick Find checkbox, and then select Lightning App Builder.
+Click New.
+Select Home Page and click Next.
+Give the page a name and click Next.
+Click CLONE SALESFORCE DEFAULT PAGE, select Home Page Default if necessary, and click Finish.
+Drag the Flow component to the top of the right column. Dragging the Flow component onto a home page
+For Flow, select Quick Account.
+Click Save and Activate to save your changes and activate the page.
+ Click Assign as Org Default and Save to assign this page as the org default home page.
+To see your flow in action, go to your Home page.
+Click Back to return to Setup.
+Click App Launcher icon, click View All, then click Home.
+Resulting home page
+Make Sure Your Users Can Run the Flow
+To make sure that your users can run the flow, add the Run Flows user permission to a permission set or profile, and assign it to the right users. If Override default behavior and restrict access to enabled profiles or permission sets is selected for the flow, add the flow to a permission set or profile, and assign it to the right users.
+Note
+Only flow admins (users with the Manage Flow user permission) can run inactive flows.
