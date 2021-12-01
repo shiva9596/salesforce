@@ -1,0 +1,6 @@
+
+You may have heard several terms used interchangeably when referring to flows. As a reminder, the official terms are:
+
+Salesforce Flow—the product that encompasses building, managing, and running flows and processes.
+Flow Builder—a point-and-click tool for building flows.
+Flow—an application that automates a business process by collecting data and doing something in your Salesforce org or an external system.
