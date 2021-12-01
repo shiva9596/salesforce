@@ -1,0 +1,11 @@
+
+The Create Records element uses the values from New Account to create an account record.
+From the Toolbox, drag a Create Records element onto the canvas. Name it Create Account.
+For How to Set the Record Fields, select Use separate resources, and literal values.
+In Create a Record of This Object, in Object, select Account.
+In Field, select Name.
+In Value, select SCREEN COMPONENTS | Account_Name.
+Click Add Field.
+In Field, select Phone.
+In Value, select SCREEN COMPONENTS | Phone_Number. Make sure that your Create Records element looks like this. Screenshot of the New Create Records screen
+Click Done.
