@@ -1,0 +1,6 @@
+From Setup, enter Process Builder in the Quick Find box, select Process Builder, and then click New.
+Name the process Closed Won Opportunities. The API name updates to Closed_Won_Opportunities when you tab out of the Name field.
+For the description, enter If a high-value opportunity is closed and won, create a draft contract and a follow-up task for the account owner.
+Configure the process to start when a record changes.
+Click Save.
+
