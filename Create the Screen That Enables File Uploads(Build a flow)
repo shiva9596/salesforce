@@ -1,0 +1,13 @@
+
+The second screen element lets users upload files for the account that they created.
+Drag another Screen element onto the canvas.
+In Screen Properties, configure these settings.
+Name the screen Upload Files in the Label field.
+On the right expand Configure Footer. Under Previous Button, select Hide Previous. Under Pause Button, select Hide Pause. If you don't make that selection users will be able to navigate back to the first screen, and multiple accounts could accidentally be created.
+On the left in Screen Components, click File Upload.
+For API Name, enter accountFiles.
+For File Upload Label, enter Upload Related Files.
+For Allow Multiple Files, select $GlobalConstant.True.
+For Related Record ID, select VARIABLES | AccountId from Create_Account. The resulting value should be {!Create_Account}. The field settings for the file upload component field
+Click Done.
+As configured, this File Upload component lets users upload more than one file at a time to the created account.
