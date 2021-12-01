@@ -1,0 +1,43 @@
+Add a Schedule
+Let’s have the owner follow up with the account 6 days after the opportunity closes.
+Under Scheduled Actions, click Set Schedule.
+Set the schedule for 6 days after the opportunity closes. Set a Schedule panel
+Click Save.
+
+
+Add Actions:-
+Now let’s define the actions that execute when the criteria are met. 
+We need an immediate action that creates a draft contract and a scheduled action that creates a task for the account’s owner.
+
+Immediate Action
+Under Immediate Actions, click Add Action.
+For the action type, select Create a Record.
+Name the action Create Draft Contract.
+For Record Type, select Contract. When you select the object that you want to create a record for, Process Builder displays rows for the required fields.
+To associate the contract with the opportunity’s account, set Account ID.
+For Type, select Field Reference.
+For Value, select Opportunity | Account ID (with no arrow next to it) and then click Choose.
+When you select a value without an arrow next to it, you're selecting a field. To use fields on related records, click a value with an arrow next to it.
+Select Opportunity > Account ID
+Make sure that the new contract is a draft. In the Value for Status, select Draft from the dropdown list. In the process action, the contract's Account ID is set to the opportunity account owner ID and the contract's status is set to Draft.
+Click Save.
+Scheduled Action
+Under the schedule we created earlier (6 Days After Close Date), click Add Action.
+For Action Type, select Create a Record.
+Name it Follow-up Task.
+For Record Type, select Task.
+Set the task's field values.
+Field
+Type
+Value
+Assigned to ID
+Field Reference
+Opportunity > Account ID > Owner ID
+Priority
+Picklist
+High
+Status
+Picklist
+Not Started
+Click Save.
+Success! You’ve created a process that automatically manages your high-value business opportunities.
