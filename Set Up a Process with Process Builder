@@ -1,0 +1,104 @@
+Provide feedback for this project
+Build a Process for Creating Interviewer Records
+Learning Objectives
+In this project, you’ll:
+
+Build processes in an HR recruiting app that streamline workflow for creating interviewer records and approving new positions.
+Create a flow for the app to simplify the process of rating candidates and make the rating process consistent.
+Introduction
+As AW Computing grows, you continue to look for new talent. You’ve already taken care of a number of requests from Ling Wu, the vice president of Human Resources, to improve her team’s recruiting app. Now she’d like you to add automation to the mix.
+
+Ling would like to automate the creation of interviewer records for hiring managers. She’d like to establish an approval process for new positions. And she wants a more user-friendly process for candidate scoring.
+
+Note
+Before you can do this project, you must complete the Build a Data Model for a Recruiting App, Customize the User Interface for a Recruiting App, Improve Data Quality for a Recruiting App, and Keep Data Secure in a Recruiting App projects. The work you do here builds on the work you complete in those projects.
+
+Set Up a Process with Process Builder
+The first thing to tackle is automated interviewer records. To set this up, you use the Lightning Process Builder, which automates tasks using conditions and actions. With Process Builder, you define evaluation criteria, determining which objects the rule you create applies to. You establish the criteria that records must meet to trigger the rule. Then you set up time triggers that determine when the process action fires.
+
+Once your criteria are in place, immediate or time-dependent actions are set in motion. These actions can include creating a record, updating a record, sending an email, posting to Chatter, initiating a quick action, submitting for approval, launching a flow, or calling an Apex class. 
+
+Start by creating a process with an immediate action.
+
+From Setup, enter Process Builder in the Quick Find box and select Process Builder.
+Click Newand define the process properties.
+Name: Create Interviewer Record
+The process starts when: A record changes
+Click Save.
+Click + Add Object.
+Select Position from the Object picklist.
+Under Start the process, select only when a record is created.
+Click Save.
+Click + Add Criteria.
+For Criteria Name enter Hiring Manager Not Blank.
+Select Conditions are met under Criteria for Executing Actions, then set the conditions.
+Field: Position: Hiring_Manager__c
+Operator: Does Not Equal
+Type: Global Constant
+Value: $GlobalConstant.Null Process Builder step Define Criteria for this Action Group showing selected criteria.
+Click Save.
+Under Immediate Actions, click + Add Action and fill in the details.
+Action Type: Create a Record
+Action Name: Create Interviewer Record
+Record Type: Interviewer
+Under Set Field Values, relate the Employee field to the Hiring Manager.
+Field: Employee
+Type: Field Reference
+Value: Hiring_Manager__c
+Relate the interviewer record to the position record by clicking + Add Rowand filling in the details.
+Field: Position
+Type: Field Reference
+Value: Record ID Process Builder Create a Record step showing selected field values.
+Click Save, Activate, then Confirm.
+Test the Process
+Now that the process is activated, you can test the process you just created. But first, add a hiring manager user.
+
+From Setup, enter Users in the Quick Find box and select Users.
+Click New Userand fill in the details.
+Field
+Value
+First Name
+Kathy
+Last Name
+Cooper
+Email
+enter your own email
+Username
+kcooper@[your initials + your favorite color].com (e.g., kcooper@APyellow.com)
+Nickname
+kcoop
+Title
+Customer Support Manager
+Role
+Customer Support, North America
+User License
+Salesforce Platform
+
+Profile
+Standard Platform User
+Deselect Generate new password and notify user immediately.
+Click Save.
+Now test the process you created.
+
+Click App Launcher to open the App Launcher, then click Recruiting.
+Click Positions, then New.
+Select the record type Nontechnical Position, then click Next and fill in the details.
+
+Field
+Value
+Title
+Super Support Supervisor
+Status
+New
+Department
+Support
+Location
+US
+Hiring Manager
+Kathy Cooper
+Job Description
+Manage a team that fields inquiries and cases from customers
+Pay Grade
+S-200
+Click Save.
+Click the Related tab.
