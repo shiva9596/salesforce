@@ -1,0 +1,48 @@
+Use Process Builder to Create a New Process
+Use Process Builder to set up the process.
+
+From Setup, enter Process Builder in the Quick Find box, then select Process Builder.
+Click New.
+For Process Name, enter Submit New Positions for Approval.
+Under The process starts when, select A record changes from the picklist.
+Click Save.
+Click + Add Object and select Position from the Object picklist.
+For Start the process, select when a record is created or edited.
+Click Save.
+Click + Add Criteria.
+For Criteria Name enter Position Ready for Approval.
+For Criteria for Executing Actions, select Conditions are met.
+Click + Add Row four times and set the conditions.
+Field	Operator	Type 	Value
+Status
+Equals
+Picklist
+New
+Job Description
+Does not equal
+Global Constant
+$GlobalConstant.Null
+Department
+Does not equal
+Global Constant
+$GlobalConstant.Null
+Education
+Does not equal
+Global Constant
+$GlobalConstant.Null
+Hiring_Manager__c
+Does not equal
+Global Constant
+$GlobalConstant.Null
+Click Save.
+Under Immediate Actions, click Add Action and fill in the details.
+Field	Value
+Action Type
+Submit for Approval
+Action Name
+Submit Position for Approval
+Object
+Position__c
+Approval Process
+Specific approval process: New Position Approval – New_Position_Approval
+Click Save, Activate, then Confirm
