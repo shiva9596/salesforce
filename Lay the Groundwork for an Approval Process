@@ -1,0 +1,75 @@
+Create a Folder and Email Templates
+Start by creating a couple of email templates and a folder to house them.
+
+From Setup, enter Classic Email Templates in the Quick Find box, then select Classic Email Templates.
+Click Create New Folder.
+Fill in the folder information:
+Email Template Folder Label: Position Request Responses
+Public Folder access: Read/Write
+Ensure This folder is accessible by all users is selected.
+Click Save.
+Now create the necessary templates. First, set up a Position Approved email template.
+
+Click New Template.
+Ensure Text is selected, then click Next and fill in the details.
+Field	Value
+Folder
+Position Request Responses
+Available for Use
+Select
+Email Template Name
+Position Approved
+Subject
+
+Your position request was approved
+Email Body
+Dear {!Position__c.OwnerFirstName},
+
+Good news! Your recent position request has been approved. 
+
+Please log in to your org for details.
+Click Save.
+Next, set up a Position Rejected email template.
+
+Navigate back to the initial Classic Email Templates page, then click New Template.
+Ensure Text is selected, then click Next and fill in the details.
+Field	Value
+Folder
+Position Request Responses
+Available for Use
+Select
+Email Template Name
+Position Rejected
+Subject
+Your position request was rejected
+Email Body
+Dear {!Position__c.OwnerFirstName},
+
+Unfortunately, your recent position request has been rejected. 
+
+Please log in to your org for details.
+Click Save.
+Create Fields
+Now build a few fields on the Position object to use in the approval process.
+
+From Setup, click Object Manager and select Position.
+Click Fields & Relationships, then click New.
+Choose Lookup Relationship as the Data Type, and click Next.
+Select User from the Related To picklist and click Next.
+Enter Approver 1 as the Field Label.
+Click Next, Next, then Save & New.
+Repeat steps 3 through 6 using Approver 2 as the Field Label.
+Repeat steps 3 through 5 using Approver 3 as the Field Label.
+Click Next, Next, and Save.
+Edit the Position Layout.
+
+While still viewing Position in Object Manager, click Page Layouts.
+Click Down arrow next to Position Layout then click Edit.
+Create a new section by dragging Section from the palette to fall under the Experience & Education section.
+Enter Approvers as the Section Name.
+Select 1-Column for the layout, then click OK.
+Drag the Approver 1, Approver 2, and Approver 3 fields from the Information section to the Approvers section.
+Click Save.
+With the prep work finished, you can set to work setting up the approval process for the recruiting team. 
+
+Assessment Complete!
