@@ -1,0 +1,22 @@
+Describe the relationship between sObjects and Salesforce records.
+A. The name of a sObject field in Apex is the label of the field in Salesforce.
+B. A custom object’s API name and label are the same.
+C. Every record in Salesforce is natively represented as a sObject in Apex.
+
+
+ 
+Answer: C
+
+You can obtain an instance of a sObject, such as Account, in one of the following ways:
+A. By creating the sObject only.
+B. Either by creating the sObject or by retrieving a persistent record from Salesforce using SOQL.
+C. By retrieving the sObject only.  
+
+Answer:B
+
+Which of the following is correct about a generic sObject variable?
+A. A generic sObject variable can be assigned only to another generic sObject.
+B. Generic sObjects can’t be created.
+C. A generic sObject variable can be assigned to any specific sObject, standard or custom. Such as Account or Book__c.  
+
+Answer: C
