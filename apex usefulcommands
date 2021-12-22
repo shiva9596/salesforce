@@ -1,0 +1,36 @@
+in apex we real elements by using get() function.
+
+we add elements after creating the list by calling add().
+
+sObjects are created with tge new operator
+
+generic sObjects can be created only through " new sObject"
+
+fields of geenric sObject can be accessed only through the put() and get() methods.
+
+DML:- Data Manipulation Language.
+SOQL:- Salesforce object Query Language.
+
+An account sObject is created first and then passed as an argument to the insert statement, which persists the record in Salesforce.
+
+The upsert and merge statements are particular to Salesforce and can be quite handy.
+
+The upsert DML operation creates new records and updates sObject records within a single statement, using a specified field to determine the presence of existing objects, or the ID field if no field is specified.
+
+The merge statement merges up to three records of the same sObject type into one of the records, deleting the others, and re-parenting any related records.
+
+When inserting records, the system assigns an ID for each record
+
+Upsert Syntax :- upsert sObject | sObject[]  or upsert sObject | sObject[]​​ field
+
+The josh variable is being reused for the upsert call.
+
+If insert was used in this example instead of upsert, a duplicate Jane Smith contact would have been inserted.
+
+
+You can delete persisted records using the delete statement
+
+Upsert returns Database.UpsertResult objects, and delete returns Database.DeleteResult objects.
+
+By default, the allOrNone parameter is true
+
